@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HW2</title>
+</head>
+<body>
+	<!-- Starts Here -->
+	<h1>50 Tags + Class Lesson</h1>
+
+	<h3>The abbr element</h3>
+	<p><abbr title="Hypertext Markup Language">HTML</abbr> is a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.</p>
+
+	<h3>The article element</h3>
+	<article>
+  <h2>Lorem Ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis sem, porta maximus odio eget, consequat porttitor enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus facilisis justo massa, porta ultricies metus dignissim eu. Integer ut sem varius, placerat dui at, tincidunt mauris. Ut augue libero, aliquet id nisl sed, ullamcorper mollis magna. Morbi tempus mi nec urna aliquam porttitor. Mauris sed lectus rutrum, tristique urna a, euismod nisi. Suspendisse mattis risus lectus, eu congue enim laoreet sit amet. Aliquam erat volutpat. Ut consequat erat elit, sed interdum enim porttitor lacinia. Proin mattis odio ut accumsan ornare.</p>
+</article>
+	
+	<img src="images/html.jpg" alt="html" width="100%">
+
+<h3>The aside element</h3>
+
+	<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+<h3>The audio element</h3>
+
+<p><b>Click on the play button to play a sound:</b></p>
+
+<audio controls>
+  <source src="audio/alarm.wav" type="audio/wav">
+  <source src="alarm.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h3>The bdi element</h3>
+<ul>
+ <li>User <bdi>hrefs</bdi>: 60 points</li>
+ <li>User <bdi>jdoe</bdi>: 80 points</li>
+ <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+
+<h3>The bdo element</h3>
+
+<p>This sentence will go left-to-right.</p>  
+<p><bdo dir="rtl">This sentence will go right-to-left.</bdo></p> 
+
+<h3>The blockquote element</h3>
+
+<p>Here is a quote from Lorem ipsum's website:</p>
+
+<blockquote cite="http://www.lipsum.com/feed/html">
+Morbi luctus ultricies iaculis. Nunc congue nisi nisl, ac interdum mi porttitor at. Nulla facilisi. Maecenas metus elit, porta sed rutrum nec, feugiat eu urna. Curabitur non nisl faucibus, rhoncus mi in, suscipit neque. Fusce finibus turpis ut eros suscipit tincidunt. Sed auctor pharetra magna id aliquam.
+</blockquote>
+
+<h3>The br element</h3>
+
+<p>Morbi luctus ultricies iaculis. Nunc congue nisi nisl, ac interdum mi porttitor at. Nulla facilisi.  <br> Maecenas metus elit, porta sed rutrum nec, feugiat eu urna.<br> Curabitur non nisl faucibus, rhoncus mi in, suscipit neque. <br> Fusce finibus turpis ut eros suscipit tincidunt. <br> Sed auctor pharetra magna id aliquam.</p>
+
+<h3>The button element</h3>
+
+<button type="button" onclick="alert('Hi There!')">Click Here!</button>
+<h3>The canvas & cite element</h3>
+
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#cc0099";
+ctx.fillRect(0, 0, 100, 100);
+</script>
+<p>This <cite>Purple</cite> color is for the canvas & cite element.</p>
+
+<h3>The code element</h3>
+
+<p>The <code>HTML</code> is a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.</p>
+
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h3>The col & colgroup element</h3>
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:lightblue;">
+    <col style="background-color:seagreen;">
+  </colgroup>
+  <tr>
+    <th>Serial</th>
+    <th>Name</th>
+    <th>Grade</th>
+  </tr>
+  <tr>
+    <td>0001</td>
+    <td>ABC</td>
+    <td>A+</td>
+  </tr>
+  <tr>
+    <td>002</td>
+    <td>XYZ</td>
+    <td>B+</td>
+  </tr>
+</table>
+
+</body>
+
+<h3>The data element</h3>
+
+<p>The following example displays product names but also associates each name with a product number:</p>
+
+<ul>
+  <li><data value="001">Chicken</data></li>
+  <li><data value="002">Beef</data></li>
+  <li><data value="003">Fish</data></li>
+</ul>
+
+<h3>The datalist, form, label & input element</h3>
+
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<h3>The dl, dd, dt, del & ins elements</h3>
+
+<p>These three elements are used to create a description list:</p>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd><del>White</del><ins>Black</ins> hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+<h3>The details element</h3>
+
+<details>
+  <summary>Lorem Ipsum</summary>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+</details>
+<h3>The dfn element</h3>
+<p><dfn title="HyperText Markup Language">HTML</dfn> and <dfn title="Cascading Style Sheets">CSS</dfn> are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices.</p>
+<h3>The dialog & em element</h3>
+<dialog open>Open <em>Dialog</em> Window</dialog>
+<br>
+<head>
+<style>
+.myDiv {
+  border: 6px outset darkblue;
+  background-color: lightblue;    
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h3>The div & i element</h3>
+
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p><i>This is some text outside the div element.<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis sem, porta maximus odio eget, consequat porttitor enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus facilisis justo massa, porta ultricies metus dignissim eu.</i></p>
+</div>
+
+<p>This is some text outside the div element.</p>
+
+</body>
+<h3>The embed element</h3>
+<embed type="video/webm" src="video/sea_beach.mp4" width="400" height="300">
+
+<h3>The fieldset, form, label, legend & input element</h3>
+	<form action="/action_page.php">
+ <fieldset>
+  <legend>Personal Information:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+
+<h3>The figure and figcaption element</h3>
+
+<figure>
+  <img src="images/html1.jpg" alt="html" width="30%">
+  <figcaption>Fig.1 - Laptop & Cellphone.</figcaption>
+</figure>
+
+<h3>The footer element</h3>
+
+<footer>
+  <p>Author: Henry Albart<br>
+  <a href="mailto:henry@example.com">henry@example.com</a></p>
+</footer>
+
+<h3>The header element</h3>
+<article>
+  <header>
+ <h3>A heading here</h3>
+    <p>Posted by Henry Albart</p>
+    <p>Some additional information here</p>
+  </header>
+  <p>Lorem Ipsum dolor set amet....</p>
+</article>
+
+<h3>The iframe element</h3>
+
+<iframe src="https://sumaiya2690.github.io/HW1/" title="SSB-358 HW1">
+</iframe>
+
+<h3>The hr element</h3>
+<hr>
+<a href="about.html">About Page</a>
+
+
+</body>
+</html>
